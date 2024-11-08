@@ -1,9 +1,4 @@
-import Projects from "./Projects";
-import Contact from "./Contact";
-import TechStackContainer from "./TechStackContainer";
-import Services from "./Services";
-import Splash from "./Splash";
-import SocialLinks from "./SocialLinks";
+import Hero from "./Hero";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -27,13 +22,8 @@ const Homepage = () => {
   useScrollToHash();
   return (
     <>
-      <Splash>
-        <SocialLinks />
-      </Splash>
-      <Projects />
-      <TechStackContainer />
-      <Services />
-      <Contact />      
+      <Hero />
+        
     </>
   )
 }

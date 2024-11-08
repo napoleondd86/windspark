@@ -1,34 +1,45 @@
-
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import NavbarCollapsible from './components/NavbarCollapsible';
 
 import './App.css'
-import Footer from './components/Footer.tsx'
 import About from './components/About.tsx'
 import ScrollToTop from './components/ScrollToTop.tsx'
-import NavbarCollapsible from './components/NavbarCollapsible.tsx'
 import Homepage from './components/Homepage.tsx'
+import Products from './components/Products.tsx'
+import Contact from './components/Contact.tsx';
+
 function App() {
-  // const [count, setCount] = useState(0)
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768); // 768px is typical mobile breakpoint
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
-    <main >
+    <main>
       <BrowserRouter>
         <ScrollToTop />
-        <NavbarCollapsible />
+        {isMobile ? <NavbarCollapsible /> : <Navbar />}
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path='/About' element={<About />} />
-        </Routes>       
-       
-        <Footer />
-
+          <Route path='/about' element={<About />} />
+          <Route path='/products' element={<Products />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes> 
       </BrowserRouter>
-      <div className="fixed-element md:block">__________________                    KURT WENSMANN PORTFOLIO                 __________________</div>
     </main>
-
-
-  )
+  );
 }
 
 export default App
