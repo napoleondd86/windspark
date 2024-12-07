@@ -19,17 +19,17 @@ const About = () => {
       <div className='flex flex-col gap-6 max-w-5xl'>
         <h2 className="text-4xl font-bold text-white text-center">Meet Our Team</h2>
         <div className='flex flex-col sm:flex-row gap-12 px-4 mx-auto justify-center items-stretch'>
-          
+
           {/* Team Member Cards - using grid to ensure equal widths */}
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 w-full'>
             {/* Kurt's Card */}
             <div className='flex flex-col bg-[#1e1b4b] rounded-lg overflow-hidden'>
               <img
                 className="w-full aspect-square object-cover"
-                src="/images/kurt.jpg"
+                src="/images/kurtsuit.jpg"
                 alt="Kurt Wensmann"
               />
-              <div className="p-6 flex flex-col h-full">
+              <div className="p-6 flex flex-col h-full ">
                 <h3 className="text-2xl font-semibold text-white">Kurt Wensmann</h3>
                 <p className="text-xl text-gray-300 mb-4">Founder & CEO</p>
                 <p className="text-gray-300 flex-grow">
@@ -39,8 +39,8 @@ const About = () => {
                   <a href="https://linkedin.com/in/kurt-wensmann" className="p-2">
                     <SiLinkedin className='text-[2rem] text-white hover:text-[#504c7e]' />
                   </a>
-                  <a 
-                    href="mailto:kurt@windspark.io" 
+                  <a
+                    href="mailto:kurt@windspark.io"
                     className="bg-gradient-to-r from-blue-600 to-cyan-500 px-4 py-2 rounded-md hover:opacity-90 text-white"
                   >
                     Talk with Kurt
@@ -56,19 +56,21 @@ const About = () => {
                 src="/images/peter.jpg"
                 alt="Peter Krause"
               />
-              <div className="p-6 flex flex-col h-full">
-                <h3 className="text-2xl font-semibold text-white">Peter Krause</h3>
-                <p className="text-xl text-gray-300 mb-4">Founder & CTO</p>
-                <p className="text-gray-300 flex-grow">
-                  As our technical leader, Peter brings deep expertise in software development
-                  and system architecture to drive our technological innovation.
-                </p>
+              <div className="p-6 flex flex-col h-full justify-end">
+                <div className=''>
+                  <h3 className="text-2xl font-semibold text-white">Peter Krause</h3>
+                  <p className="text-xl text-gray-300 mb-4">Founder & CTO</p>
+                  <p className="text-gray-300 flex-grow">
+                    As our technical leader, Peter brings deep expertise in software development
+                    and system architecture to drive our technological innovation.
+                  </p>
+                </div>
                 <div className="flex gap-4 items-center justify-end mt-4">
                   <a href="https://linkedin.com/in/peter-krause-9465662a4" className="p-2">
                     <SiLinkedin className='text-[2rem] text-white hover:text-[#504c7e]' />
                   </a>
-                  <a 
-                    href="mailto:peter@windspark.io" 
+                  <a
+                    href="mailto:peter@windspark.io"
                     className="bg-gradient-to-r from-blue-600 to-cyan-500 px-4 py-2 rounded-md hover:opacity-90 text-white"
                   >
                     Talk with Peter
