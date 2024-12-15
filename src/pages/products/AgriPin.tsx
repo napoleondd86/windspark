@@ -34,7 +34,7 @@ const AgriPin = () => {
                 </Link>
                 <a
                   className="inline-block bg-none text-blue-600 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition border-2 border-blue-600"
-                  href="/privacy-policy.html"
+                  href="/agripin/privacy-policy.html"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
