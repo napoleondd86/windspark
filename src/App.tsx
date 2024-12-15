@@ -9,8 +9,9 @@ import ScrollToTop from './components/ScrollToTop.tsx'
 import Homepage from './components/Homepage.tsx'
 import Products from './components/Products.tsx'
 import Contact from './components/Contact.tsx';
+import AgriPin from './pages/products/AgriPin.tsx';
 
-function App() {
+function App () {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768); // 768px is typical mobile breakpoint
 
   useEffect(() => {
@@ -36,7 +37,8 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/products' element={<Products />} />
           <Route path='/contact' element={<Contact />} />
-        </Routes> 
+          <Route path="/products/agripin" element={<AgriPin />} />
+        </Routes>
       </BrowserRouter>
     </main>
   );
