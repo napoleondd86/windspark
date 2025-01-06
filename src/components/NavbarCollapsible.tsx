@@ -18,8 +18,8 @@ const NavbarCollapsible = () => {
       <div className="transition-all duration-300">
         <div className="flex justify-between items-center">
           {/* Hamburger Button */}
-          <div 
-            className={`z-50 fixed top-12 right-12 h-12 w-12 text-white text-4xl font-bold cursor-pointer hover:scale-y-125 ${isOpen ? 'text-white' : 'text-[#1e1b4b]'}`} 
+          <div
+            className={`z-50 fixed top-12 right-12 h-12 w-12 text-[#1e1b4b] text-4xl font-bold cursor-pointer hover:scale-y-125 ${isOpen ? 'text-white' : 'text-[#1e1b4b]'}`}
             onClick={toggleNavbar}
           >
             {isOpen ? "✕" : "☰"}
@@ -28,7 +28,7 @@ const NavbarCollapsible = () => {
       </div>
 
       {/* Full Screen Menu Overlay */}
-      <div 
+      <div
         className={`
           fixed top-0 left-0 w-full h-full 
           bg-[#1e1b4b] 
@@ -38,30 +38,30 @@ const NavbarCollapsible = () => {
         `}
       >
         <div className="flex flex-col gap-8 text-center">
-          <Link 
-            className='text-5xl text-white hover:text-[#504c7e]' 
-            to="/" 
+          <Link
+            className='text-5xl text-white hover:text-[#504c7e]'
+            to="/"
             onClick={closeNavbar}
           >
             Home
           </Link>
-          <Link 
-            className='text-5xl text-white hover:text-[#504c7e]' 
-            to="/about" 
+          <Link
+            className='text-5xl text-white hover:text-[#504c7e]'
+            to="/about"
             onClick={closeNavbar}
           >
             About
           </Link>
-          <Link 
-            className='text-5xl text-white hover:text-[#504c7e]' 
-            to="/#projects" 
+          <Link
+            className='text-5xl text-white hover:text-[#504c7e]'
+            to="/products"
             onClick={closeNavbar}
           >
-            Projects
+            Products
           </Link>
-          <Link 
-            className='text-5xl text-white hover:text-[#504c7e]' 
-            to="/#contact" 
+          <Link
+            className='text-5xl text-white hover:text-[#504c7e]'
+            to="/#contact"
             onClick={closeNavbar}
           >
             Contact

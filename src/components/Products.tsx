@@ -29,7 +29,7 @@ const Products = () => {
                 <Link to="/products/agripin" className="block">
                   <div className="h-64 bg-none">
                     <img
-                      src='/images/agripin-logo.png'
+                      src='/images/logo-silos-color.png'
                       alt="AgriPin"
                       className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
                     />

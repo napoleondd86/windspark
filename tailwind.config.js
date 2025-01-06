@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html",
-  "./src/**/*.{js,ts,jsx,tsx}"],
+    "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       screens: {
@@ -31,7 +31,7 @@ export default {
         bgwatercolor2: "url('/images/bg-watercolor2.png')",
         bgwoodgrain: "url('/images/bg-woodgrain.png')",
         woodgrain: "url('/woodgrain.png')",
-      
+
       },
       colors: {
         mypink: '#cd9c7b',
@@ -54,37 +54,40 @@ export default {
         sepiaskin100: '#f5e7e0',
         myorange: '#c66b5e',
         myorange100: '#f6e5e2',
-        walnut:'#5A3A22',
+        walnut: '#5A3A22',
         walnutLight: '#7D5A3A',
         walnutDark: '#3A2417',
-        primary200:'#F4E9E8',
-        primary400:'#653050',
-        primary600:'#5A3A22',
-        primaryLight:'#F5E9F3',
-        birch:'#E9E0B5',
-        birchLight:'#F5F1E6',
-        birchExtraLight:'#F7F5E9',
-        birchDark:'#C9B38C',
-        primaryDark:'#653050',
-        secondaryOrange:'#FFA500',
-        secondaryOrangeLight:'#FFDAB9',
+        primary200: '#F4E9E8',
+        primary400: '#653050',
+        primary600: '#5A3A22',
+        primaryLight: '#F5E9F3',
+        birch: '#E9E0B5',
+        birchLight: '#F5F1E6',
+        birchExtraLight: '#F7F5E9',
+        birchDark: '#C9B38C',
+        primaryDark: '#653050',
+        secondaryOrange: '#FFA500',
+        secondaryOrangeLight: '#FFDAB9',
         secondaryYellow: '#FFD700',
         secondaryYellowLight: '#FFFACD',
-        accent:'#2E8B57',
-        accentLight:'#98FB98',
+        accent: '#2E8B57',
+        accentLight: '#98FB98',
         background: '#F5F5F5',
         highlight: '#007BFF',
         highlightLight: '#B0C4DE',
-      }
+      },
+      fontFamily: {
+        'montserrat': ['Montserrat', 'sans-serif'],
+      },
     },
   },
   plugins: [
-  require('tailwindcss/nesting'),
-  require('tailwindcss'),
-  require('autoprefixer'),
-  require('@tailwindcss/forms'),
-  require('@tailwindcss/aspect-ratio'),
+    require('tailwindcss/nesting'),
+    require('tailwindcss'),
+    require('autoprefixer'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
 
-],
+  ],
 }
 
